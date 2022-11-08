@@ -9,6 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route exaxt path="/" element={<Login />}></Route>
+          {/* rendering multiple components with the same path  */}
           <Route exact path="/home" element={<><Header/><Home/></>}/>
         </Routes>
       </Router>
