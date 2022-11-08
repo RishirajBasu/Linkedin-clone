@@ -60,8 +60,8 @@ const Header = (props) => {
                 <img src="/images/user.svg" alt="" />
                 <span>
                   Me
-                </span>
                 <img src="/images/down-icon.svg" alt="" />
+                </span>
               </a>
               <SignOut>
                 <a>
