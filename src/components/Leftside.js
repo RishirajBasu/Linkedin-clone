@@ -52,7 +52,7 @@ const Leftside = () => {
         <a>
             <span>
                 Follow Hashtags
-            </span>
+            </span>  
         </a>
         <a>
             <span>
@@ -166,5 +166,33 @@ const Item = styled.div`
         background-color: rgba(0,0,0,0.08);
     }
 `;
-const CommunityCard = styled.div``;
+const CommunityCard = styled(Artcard)`
+    padding:8px 0 0 ;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    a{
+        color:black;
+        padding: 4px 12px 4px 12px;
+        font-size: 12px;
+        /* &: is used to select the current parent selected element  */
+    &:hover{
+        color: #0a66c2;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &:last-child{
+        color:rgba(0,0,0,0.6);
+        text-decoration: none;
+        border-top:1px solid #d6cec2;
+        padding: 12px;
+        &:hover{
+            background-color: rgba(0,0,0,0.08);
+        }
+    }
+}
+`;
 export default Leftside;
